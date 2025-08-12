@@ -48,10 +48,16 @@ function PokemonList() {
 
     return (
         <div className='pokemon-list-wrapper'>
-            <h3>Pokemon List</h3>
+            <h3 className='pokemon-listHead'>Pokemon List</h3>
+            <div className='pokemon-outputData'>
             {isLoading ? "Data is loading" : 
             pokemonList.map((p) => <Pokemon name={p.name} image={p.image}  key={p.id} />)
             }
+            </div>
+            <div className='controlls'>
+                <button disabled="">Prev</button>
+                <button disabled="">Next</button>
+            </div>
           
         </div>
     );
