@@ -57,7 +57,7 @@ function PokemonList() {
             <h3 className='pokemon-listHead'>Pokemon List</h3>
             <div className='pokemon-outputData'>
             {isLoading ? "Data is loading" : 
-            pokemonList.map((p) => <Pokemon name={p.name} image={p.image}  key={p.id} />)
+            pokemonList.map((p) => <Pokemon name={p.name} image={p.image}  key={p.id} id={p.id} />)
             }
             </div>
             <div className='controlls'>
