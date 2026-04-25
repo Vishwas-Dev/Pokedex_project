@@ -19,4 +19,4 @@ function Search({updateSearchTerm}) {
     )
 }
 
-export default Search
+
